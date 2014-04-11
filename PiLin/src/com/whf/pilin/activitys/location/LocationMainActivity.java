@@ -142,17 +142,17 @@ public class LocationMainActivity extends Activity implements OnClickListener{
 			 if(!mHasNotSendPoint){
 				 List<String> rowids = pointNotSendedDAO.findAll();
 				 List<LocalGeoPoint> list =  geoPointDAO.findByRowId(rowids);
-				 mHasNotSendPoint = HttpUtils.mResendPosition(Arrays.toString(convertGeoPointToStringArray(list).toArray()), "http://115.29.16.110:8080/GisRecoed/servlet/ReceiveCoordinateServlet");
-						//HttpUtils.mResendPosition(Arrays.toString(convertGeoPointToStringArray(list).toArray()), "http://10.194.159.179:8080/struts_upload/androidSend.action");
+				 mHasNotSendPoint = HttpUtils.mResendPosition(Arrays.toString(convertGeoPointToStringArray(list).toArray()), "http://ip:port/GisRecoed/servlet/ReceiveCoordinateServlet");
+						
 			 }
 			
-			 if(!HttpUtils.sendPosition(positions.get(positions.size()-1), "http://115.29.16.110:8080/GisRecoed/servlet/ReceiveCoordinateServlet")) 
-					 //"http://10.194.159.179:8080/struts_upload/androidSend.action"));
+			 if(!HttpUtils.sendPosition(positions.get(positions.size()-1), "http://ip:port/GisRecoed/servlet/ReceiveCoordinateServlet")) 
+					
 			 {
 				 pointNotSendedDAO.save(lastPointRowId);
 				 mHasNotSendPoint = false;
 			 }
-			//HttpUtils.sendPosition(positions.get(positions.size()-1), "http://10.194.159.179:8080/struts_upload/androidSend.action");
+			
 			
 			return false;
 		}

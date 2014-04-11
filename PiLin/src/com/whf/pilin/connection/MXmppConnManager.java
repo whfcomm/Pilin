@@ -15,8 +15,6 @@ import org.jivesoftware.smack.packet.Packet;
 import org.jivesoftware.smack.packet.Presence;
 import org.jivesoftware.smack.util.StringUtils;
 import org.jivesoftware.smackx.OfflineMessageManager;
-import org.jivesoftware.smackx.filetransfer.FileTransfer;
-import org.jivesoftware.smackx.filetransfer.FileTransfer.Status;
 import org.jivesoftware.smackx.filetransfer.FileTransferListener;
 import org.jivesoftware.smackx.filetransfer.FileTransferManager;
 import org.jivesoftware.smackx.filetransfer.OutgoingFileTransfer;
@@ -54,6 +52,12 @@ public class MXmppConnManager {
 	public static String hostUid;
 	
 	public FileTransferListener fileTranListener ;
+	
+	private static String IP = "218.244.150.50";
+	
+	private static int PORT = 5222;
+	
+	private static String HOST = "AY140326090233737f4cZ";
 	
 	private  MXmppConnManager(){
 		
@@ -140,8 +144,8 @@ public class MXmppConnManager {
 			
 			
 			connection = new XMPPConnection(config);
-			config = new ConnectionConfiguration("218.244.150.50", 5222,
-					"AY140326090233737f4cZ");
+			config = new ConnectionConfiguration(IP, PORT,
+					HOST);
 			config.setSASLAuthenticationEnabled(false);
 			config.setReconnectionAllowed(true);
 			config.setSendPresence(false);

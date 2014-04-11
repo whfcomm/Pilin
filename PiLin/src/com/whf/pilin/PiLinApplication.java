@@ -23,8 +23,6 @@ import android.widget.Toast;
 import com.whf.pilin.activitys.main.MainFragmentActivity;
 import com.whf.pilin.adapter.chat.FaceGridViewAdapter;
 import com.whf.pilin.android_service.LocationService.LocationChangedListener;
-import com.whf.pilin.bitmap.cache.ImageCache;
-import com.whf.pilin.bitmap.cache.commonCache.CacheUtils;
 import com.whf.pilin.connection.MXmppConnManager;
 import com.whf.pilin.constVar.CustomConst;
 import com.whf.pilin.dao.BaseDAO;
