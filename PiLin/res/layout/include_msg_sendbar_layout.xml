@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/rl_chat_sendbar"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="bottom"
+	        android:background="@drawable/user_info_icon_shape"
+	        android:orientation="horizontal"
+	         >
+	         	 <ImageView
+	                android:layout_marginLeft="5dp"
+	                android:id="@+id/iv_chat_media"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_gravity="center"
+	                android:clickable="true"
+	                android:contentDescription="@string/app_name"
+	                android:src="@drawable/ic_chat_plus_normal"
+	                 />
+	            <ImageView
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:id="@+id/iv_chat_biaoqing"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_gravity="center"
+	                android:clickable="true"
+	                android:contentDescription="@string/app_name"
+	                android:src="@drawable/chatting_biaoqing_btn_selector" />
+	
+	            <com.whf.pilin.view.EmotionEditText
+	                android:id="@+id/et_chat_msg"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="6"
+	                android:hint="@string/chat_msg_hint"
+	                android:minLines="2"
+	                android:singleLine="false"
+	                android:textSize="15sp" />
+	
+	            <Button
+	                android:id="@+id/btn_chat_send"
+	                android:layout_width="0dp"
+	                android:layout_height="50dp"
+	                android:layout_weight="2"
+	                android:background="#ff47b8ff"
+	                android:text="@string/chat_msg_send" />
+</LinearLayout>

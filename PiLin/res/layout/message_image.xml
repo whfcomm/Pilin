@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/user_info_icon_shape"
+    android:gravity="left" >
+
+    <ImageView
+        android:id="@+id/message_iv_msgimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/ic_common_def_header"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/message_layout_loading"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:visibility="gone"
+            android:id="@+id/message_iv_def_pic"
+            android:src="@drawable/ic_common_def_header" />
+        <ImageView
+            android:id="@+id/message_iv_loading"
+            android:layout_width="29dip"
+            android:layout_height="5dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_loading_msgplus_02" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/message_htv_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_download_process_bar"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

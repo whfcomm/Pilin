@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+         >
+		
+        <RadioButton
+            android:layout_margin="15dp"
+            android:clickable="true" 
+            android:background="@drawable/setting_item_selector"
+            android:id="@+id/rb_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_selector"
+            android:textDirection="ltr"
+            android:text="@string/radio_provider_auto"
+            android:textColor="#000000"
+             />
+        
+        <View  
+            android:layout_width="fill_parent"  
+            android:layout_height="1dp"  
+            android:background="@android:color/darker_gray" /> 
+            
+        <RadioButton
+            android:layout_margin="15dp"
+            android:clickable="true" 
+            android:background="@drawable/setting_item_selector"
+            android:id="@+id/rb_gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_selector"
+            android:textDirection="ltr"
+            android:text="@string/radio_provider_gps"
+            android:textColor="#000000"
+             />
+        
+			<View  
+            android:layout_width="fill_parent"  
+            android:layout_height="1dp"  
+            android:background="@android:color/darker_gray" /> 
+            
+        <RadioButton
+            android:layout_margin="15dp"
+            android:clickable="true" 
+            android:background="@drawable/setting_item_selector"
+            android:id="@+id/rb_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_selector"
+            android:textDirection="ltr"
+            android:text="@string/radio_provider_network"
+            android:textColor="#000000"
+             />
+		<View  
+            android:layout_width="fill_parent"  
+            android:layout_height="1dp"  
+            android:background="@android:color/darker_gray" /> 
+            
+        <RadioButton
+            android:layout_margin="15dp"
+            android:clickable="true" 
+            android:background="@drawable/setting_item_selector"
+            android:id="@+id/rb_passive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_selector"
+            android:textDirection="ltr"
+            android:text="@string/radio_provider_passive"
+            android:textColor="#000000"
+             />
+    </RadioGroup>
+
+</LinearLayout>

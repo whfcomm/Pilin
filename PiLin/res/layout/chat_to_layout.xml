@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_weight="15"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_gravity="right"
+	    android:gravity="right"
+	    >
+	    <TextView 
+	        android:id="@+id/tv_send_time"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:gravity="center"
+	        android:textSize="10sp"
+	        android:text="@string/app_name"
+	        android:textColor="#cccccc"
+	        />
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/ll_msg"
+	        android:layout_marginLeft="50dp"
+	        android:clickable="true"
+	        android:background="@drawable/chat_to_msg_background_selector"
+	        >
+	    </LinearLayout>
+	</LinearLayout>
+    <LinearLayout 
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/user_info_icon_shape"
+        >
+        <ImageView 
+            android:id="@+id/iv_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/people_icon_selector"
+            android:contentDescription="@string/app_name"
+            />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/tv_register_agien"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/tv_register_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="phone" />
+    </LinearLayout>
+	<LinearLayout
+	    android:layout_below="@+id/linearLayout1"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	     >
+	    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_agree"
+        android:textColor="#aaaaaa"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12sp"
+         />	
+	    
+	</LinearLayout>
+    
+
+</RelativeLayout>

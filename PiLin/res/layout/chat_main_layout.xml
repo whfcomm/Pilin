@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <android.support.v4.widget.SwipeRefreshLayout
+         android:layout_weight="12"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_gravity="bottom"
+         android:layout_margin="5dp"
+         android:id="@+id/srfl_chat"
+        >
+        <com.whf.pilin.view.CommonChatListView
+            android:id="@+id/lv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:drawSelectorOnTop="false"
+            android:listSelector="#00000000"
+            android:scrollingCache="false"
+            android:scrollbars="none" >
+        </com.whf.pilin.view.CommonChatListView>
+     </android.support.v4.widget.SwipeRefreshLayout>   
+	 <include android:id="@+id/rl_chat_sendbar"  layout="@layout/include_msg_sendbar_layout"/>
+	 <FrameLayout 
+	     android:layout_height="0dp"
+	     android:layout_weight="10"
+	     android:background="@drawable/user_info_icon_shape"
+	     android:layout_width="match_parent"
+	     android:id="@+id/fl_emotion_media"
+	     >
+	     
+	     <LinearLayout 
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:gravity="center_horizontal"
+	         android:id="@+id/ll_chat_plusbar"
+	         >
+	         <include android:id="@+id/include_chat_plus_pic" layout="@layout/include_chat_media_layout"/>
+	         <include android:id="@+id/include_chat_plus_camera" layout="@layout/include_chat_media_layout"/>
+	         <include android:id="@+id/include_chat_plus_location" layout="@layout/include_chat_media_layout"/>
+	     </LinearLayout>
+	     <include 
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent" 
+	          layout="@layout/include_emotion_layout"/>
+	 </FrameLayout>
+	 
+</LinearLayout>

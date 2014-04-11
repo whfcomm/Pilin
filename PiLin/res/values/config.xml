@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="updateUrl">http://115.29.16.110:8080/blit_location_service/update.xml</string>
+</resources>

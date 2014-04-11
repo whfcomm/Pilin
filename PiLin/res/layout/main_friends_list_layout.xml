@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:id="@+id/fl_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView 
+            android:id="@+id/lv_friends"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            ></ListView>
+        
+        <TextView 
+            android:id="@+id/tv_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:maxWidth="70dp"
+            android:minWidth="70dp"
+            android:padding="10dp"
+            android:textColor="#99FFFFFF"
+            android:textSize="50sp"
+            />
+        
+        <com.whf.pilin.activitys.main.fragment.FriendsSiderView
+            android:id="@+id/fsv_sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            >
+        </com.whf.pilin.activitys.main.fragment.FriendsSiderView>
+        
+    </FrameLayout>
+
+</LinearLayout>

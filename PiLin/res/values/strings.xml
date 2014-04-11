@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PiLin</string>
+    <string name="hello_world">hello_world</string>
+    <string name="action_settings">Settings</string>
+	
+     <string name="menu_option_voice">我的旅途</string>
+    <string name="menu_option_log">定位</string>
+    <string name="menu_option_setting">设置</string>
+    
+    <!-- 设置中Radio中TextView中的提示 -->
+    <string name="radio_provider_auto">自动选择</string>
+    <string name="radio_provider_network">网络定位</string>
+    <string name="radio_provider_gps">GPS定位</string>
+    <string name="radio_provider_passive">依赖定位</string>
+    
+    <!-- 设置中Switch中TextView中的提示 -->
+    <string name="switch_runonstart">开机自动运行  </string>
+    <string name="switch_isservice">作为服务运行</string>
+    
+    <string name="text_mills">定位间隔时间</string>
+    <string name="text_meters">定位间隔距离</string>
+    
+    <!-- 主页上TAB标签文字 -->
+    <string name="near">near</string>
+    <string name="msgs">msgs</string>
+    <string name="friends">friends</string>
+    
+    <!-- 登录设置 -->
+    <string name="username">账号</string>
+    <string name="userpwd">密码</string>
+    <string name="login">登录</string>
+    <string name="logout">退出</string>
+    <string name="register">注册</string>
+    
+    <!-- 注册界面 -->
+    <string name="register_agree">注册表示你同意</string>
+    <string name="register_agree_protcol">营配协议</string>
+    <!-- 发送信息栏 -->
+    <string name="chat_msg_hint">请输入信息</string>
+    <string name="chat_msg_send">发送</string>
+    
+    <!-- 聊天应用栏图标对应的图片缓存名 -->
+    <string name="chatbar_emotion">CAHTBAR_EMOTION</string>
+    <string name="chatbar_plus">CAHTBAR_EMOTION</string>
+    <string name="plusbar_pic">PLUSBAR_PIC</string>
+    <string name="plusbar_camera">PLUSBAR_CAMERA</string>
+    <string name="plusbar_location">PLUSBAR_LOCATION</string>
+    
+    <!-- 信息的来源 -->
+    <string name="chat_msg_from">0</string>
+    <string name="chat_msg_to">1</string>
+    
+    <!-- MainTab Title -->
+    <string-array name="main_tab_names">
+        <item>动态</item>
+        <item>消息</item>
+        <item>好友</item>
+    </string-array>
+    
+</resources>

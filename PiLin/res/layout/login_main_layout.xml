@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+         >
+        <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/username" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:id="@+id/et_username"
+            android:hint="@string/username"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+         >
+        <TextView
+        android:id="@+id/tv_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/userpwd" />
+        
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:id="@+id/et_userpwd"
+            android:inputType="textPassword"
+            android:hint="@string/userpwd"
+            />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+         >
+        <Button 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:text="@string/login"
+            android:id="@+id/btn_login"
+            android:background="@drawable/map_action_selector"
+            />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:text="@string/register" />
+    
+</LinearLayout>

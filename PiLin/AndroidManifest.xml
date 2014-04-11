@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whf.pilin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!-- 用于访问wifi网络信息,wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<!-- 这个权限用于获取wifi的获取权限,wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<!-- 用于读取手机当前的状态-->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<!-- 访问网络，网络定位需要上网-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- SD卡读取权限，用户写入离线定位数据-->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<!-- 允许应用读取低级别的系统日志文件-->
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <!-- 读取手机信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 获取手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blit_location"
+        android:label="@string/app_name"
+       	android:theme="@style/AppBaseTheme"
+        android:name="com.whf.pilin.PiLinApplication"
+         >
+        <activity
+            android:name="com.whf.pilin.activitys.splash.SplashActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 引导页面 -->
+        <activity android:name="com.whf.pilin.activitys.login.LoginActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        
+        <!-- 主页面 -->
+       <activity 
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:allowTaskReparenting="true"
+            android:alwaysRetainTaskState="true"
+          	android:name="com.whf.pilin.activitys.main.MainFragmentActivity"
+            ></activity>
+       <!-- 定位 -->
+       <activity 
+           android:screenOrientation="portrait"
+           android:name="com.whf.pilin.activitys.location.LocationMainActivity"></activity>
+       <!-- 位置线路 -->
+        <activity android:theme="@style/MyMapTheme" 
+            android:name="com.whf.pilin.activitys.overlay.LocationOverlayActivity"></activity>
+        <!-- 引导 -->
+        <activity android:name="com.whf.pilin.activitys.guide.GuideActivity"
+            android:theme="@style/MyMapTheme">
+        </activity>
+        <!-- 设置 -->
+        <activity android:name="com.whf.pilin.activitys.setting.SettingActvity"></activity>
+        
+        <!-- 聊天界面 -->
+        <activity 
+            android:windowSoftInputMode="adjustResize"
+            android:name="com.whf.pilin.activitys.chat.fragments.ChatMainFragmentActivity"></activity>
+        
+        <activity 
+            android:windowSoftInputMode="adjustResize"
+            android:name="com.whf.pilin.activitys.chat.activity.ChatActivity"
+            ></activity>
+        
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
+   		<service android:name="com.whf.pilin.activitys.location.LocationMainActivity$SendDataToOveryLayService"></service>
+   		<service android:name="com.whf.pilin.android_service.LocationService"></service>
+   		
+   		<receiver android:name="com.whf.pilin.recceiver.OfflineMsgReceiver"></receiver>
+   		
+   		<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="nu2BKKqcigzc0OvjE38EloTe"></meta-data>
+   		
+   		
+   		
+     </application>
+     
+	<supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

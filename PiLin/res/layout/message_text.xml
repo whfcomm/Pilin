@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whf.pilin.view.EmotionTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_etv_msgtext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:autoLink="all"
+    android:focusable="false"
+    android:gravity="left"
+    android:padding="10dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:textColor="@color/text_color"
+    android:textSize="16sp" />

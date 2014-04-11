@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/ll_chat_face"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/user_info_icon_shape" >
+	
+	        <GridView
+	            android:id="@+id/gv_chat_biaoqing"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="#dddddd"
+	            android:clickable="false"
+	            android:horizontalSpacing="2dp"
+	            android:padding="5dp"
+	            android:numColumns="7"
+	            android:verticalSpacing="2dp" >
+	        </GridView>
+</LinearLayout>

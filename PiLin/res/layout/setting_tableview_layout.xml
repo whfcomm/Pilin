@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settint_background"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:background="#dddddd"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/line_radio"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    layout="@layout/line_spacliter" />
+
+                <include layout="@layout/action_more_item_setting_radio"
+                    android:id="@+id/include_ra"
+                      />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/line_text"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    layout="@layout/line_spacliter" />
+
+                <include
+                    android:id="@+id/include_text_mills"
+                    layout="@layout/action_more_item_setting_text" 
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <include
+                    android:id="@+id/include_text_miter"
+                    layout="@layout/action_more_item_setting_text"
+                     />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/line_logout"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    layout="@layout/line_spacliter" />
+
+                <Button 
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="@string/logout"
+                    android:id="@+id/btn_logout"
+                    android:background="@drawable/btn_logout_background"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+            <!-- 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dddddd"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/line_switch"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    layout="@layout/line_spacliter" />
+
+                <include layout="@layout/action_more_item_setting_switch" 
+                    	android:id="@+id/include_sw_service"
+                    	/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <include layout="@layout/action_more_item_setting_switch" 
+                    android:id="@+id/include_sw_runinit"
+                    />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+			 -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
